@@ -43,5 +43,18 @@ El servidor sirve automáticamente los archivos estáticos de `frontend` y expon
 - Servicios de hosting como Heroku, Vercel o Netlify pueden usar `npm start` para lanzar el servidor.
 - Asegúrate de configurar la variable `PORT` si el proveedor lo requiere (por ejemplo `process.env.PORT || 3000`).
 
+### Publicando en GitHub
+
+1. Crea un repositorio vacío en GitHub (por ejemplo `proyecto-deportivo`).
+2. En tu máquina local añade la URL remota y sube los cambios:
+   ```bash
+   git remote add origin https://github.com/tu-usuario/proyecto-deportivo.git
+   git branch -M main
+   git push -u origin main
+   ```
+3. Cada vez que hagas cambios, usa `git add`, `git commit` y `git push` para subirlos.
+
+> Alternativamente, puedes usar GitHub Desktop o la línea de comandos de Git integrada en VS Code.
+
 > Nota: el proyecto utiliza almacenamiento en memoria. Los comentarios desaparecen al reiniciar el
 > servidor; en producción debería integrarse una base de datos o un fichero.
