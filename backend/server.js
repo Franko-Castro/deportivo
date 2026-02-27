@@ -6,8 +6,8 @@ const path = require("path");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// servir archivos estáticos del cliente desde la carpeta frontend
-app.use(express.static(path.join(__dirname, "../frontend")));
+// servir archivos estáticos del cliente desde la carpeta docs (para GitHub Pages también)
+app.use(express.static(path.join(__dirname, "../docs")));
 
 // habilitar CORS solo si se requieren peticiones cross‑origin (no es necesario en despliegues mismo origen)
 app.use(cors());

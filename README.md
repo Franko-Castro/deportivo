@@ -8,7 +8,7 @@ Este repositorio contiene una pequeña aplicación web que permite dejar comenta
 PROYECTO-DEPORTIVO/
 ├─ backend/
 │   └─ server.js          # API de comentarios
-├─ frontend/
+├─ docs/                  # cliente estático (sirve también GitHub Pages)
 │   ├─ css/
 │   │   └─ styles.css     # estilos de la página
 │   ├─ js/
@@ -53,6 +53,14 @@ El servidor sirve automáticamente los archivos estáticos de `frontend` y expon
    git push -u origin main
    ```
 3. Cada vez que hagas cambios, usa `git add`, `git commit` y `git push` para subirlos.
+
+### Usar GitHub Pages
+
+Para publicar la parte estática (`docs`):
+
+- En la configuración del repositorio (**Settings → Pages**), selecciona la rama `main` y la carpeta `/docs`.
+- GitHub servirá automáticamente el contenido de `docs` como un sitio web.
+- Tu servidor Express no se ejecutará en Pages; esta es solo una copia estática del cliente.
 
 > Alternativamente, puedes usar GitHub Desktop o la línea de comandos de Git integrada en VS Code.
 
